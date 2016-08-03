@@ -52,13 +52,28 @@
 
         </android.support.design.widget.AppBarLayout>
 
-       <!-- <include layout="@layout/content_main" /> -->
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:lineSpacingExtra="8dp"
+                android:text="@string/lorem_ipsum"
+                android:padding="@dimen/activity_horizontal_margin"
+                />
+        </android.support.v4.widget.NestedScrollView>
 
         <android.support.design.widget.FloatingActionButton
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:src="@drawable/ic_next"
+            android:layout_gravity="end|bottom"
             app:layout_anchorGravity="bottom|right|end"
             />
 
