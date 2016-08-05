@@ -1,5 +1,6 @@
 package sk.tomus.curriculumvitae;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -8,8 +9,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.bumptech.glide.Glide;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
@@ -21,8 +25,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        loadBackdrop();
         initNavigationDrawer();
 
+    }
+
+    private void loadBackdrop() {
+        final ImageView imageView = (ImageView)findViewById(R.id.backdrop);
+        Glide.with(this).load(R.drawable.material_flat).centerCrop().into(imageView);
     }
 
     public void initNavigationDrawer() {
