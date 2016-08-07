@@ -1,11 +1,11 @@
 package sk.tomus.curriculumvitae;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,18 +13,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Activity_About extends AppCompatActivity {
+public class Activity_Experience extends AppCompatActivity {
+
     private DrawerLayout drawerLayout;
     private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_about);
+        setContentView(R.layout.layout_experience);
         initToolbar();
         initNavigationDrawer();
         initFabButton();
-
     }
 
     private void initToolbar() {
@@ -39,7 +39,7 @@ public class Activity_About extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Clicked", Toast.LENGTH_SHORT).show();
-                startNextActivity(1);
+                startNextActivity(0);
             }
         });
     }
