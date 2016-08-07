@@ -40,6 +40,7 @@ public class Activity_About extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Clicked", Toast.LENGTH_SHORT).show();
                 startNextActivity(1);
+                finish();
             }
         });
     }
