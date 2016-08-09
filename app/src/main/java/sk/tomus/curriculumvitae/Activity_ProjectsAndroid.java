@@ -23,7 +23,7 @@ public class Activity_ProjectsAndroid extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_experience);
+        setContentView(R.layout.layout_android);
         loadBackdrop();
         initToolbar();
         initNavigationDrawer();
@@ -32,7 +32,7 @@ public class Activity_ProjectsAndroid extends AppCompatActivity {
 
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
-        Glide.with(this).load(R.drawable.material_shifted).centerCrop().into(imageView);
+        Glide.with(this).load(R.drawable.image_android).centerCrop().into(imageView);
     }
 
     private void initToolbar() {

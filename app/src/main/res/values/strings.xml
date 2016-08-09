@@ -3,5 +3,44 @@
     <string name="tom_javorsk">Tomáš Javorský</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
-    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut nibh lorem. Suspendisse fermentum sit amet diam vel ullamcorper. Quisque convallis nunc scelerisque diam varius, sit amet cursus augue dapibus. Vivamus et odio nunc. Duis sed finibus ante, in luctus turpis. Donec porttitor ornare dapibus. Curabitur sit amet ex quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, nisl nec efficitur congue, nulla ante venenatis enim, at vestibulum lacus risus et nisi. Nam faucibus posuere tortor et vestibulum. Maecenas viverra fringilla augue, nec volutpat mauris commodo nec. Donec non dolor lorem. Sed ac neque sodales, eleifend odio non, porta leo. Phasellus vel nulla eu libero commodo pulvinar faucibus quis tellus. Mauris nec mi auctor, tempus risus non, imperdiet orci. Pellentesque tristique eros diam, sed posuere erat cursus in. Praesent consectetur, nibh et imperdiet efficitur, ipsum  auctor nisl, vel rutrum nulla ex non nisi. Ut congue fringilla mauris at commodo. Morbi vitae vestibulum odio, sed rhoncus enim. Morbi consequat sed mauris in fermentum. Fusce libero lacus, cursus vel aliquam a, efficitur ut justo. Nulla cursus erat tortor, ac commodo risus auctor a. Cras iaculis lacus non luctus rhoncus. Aliquam id posuere ipsum. Proin porta luctus felis in rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras fringilla enim eu purus semper, vitae vehicula leo convallis. Suspendisse dolor enim, rhoncus vel elit sit amet, gravida bibendum turpis. Curabitur eleifend massa ut risus mattis vulputate. Etiam suscipit, metus et egestas maximus, purus velit tempus elit, et consequat.</string>
+
+    <string name="about">Im an IT student currently in my final year of my master\'s. I have been developing
+    games and interactive apps for mobile devices in Unity during my internship in Brazil. Before that I made an
+    app called Alertside in Android studio and released it on Google Play. I have also contributed 3D models
+    to Dota2 workshop. My bachelor\'s thesis was covering a topic about parallel processing on GPU using CUDA.
+    Right now I would like to continue developing for Android. Im looking for a company with a driven team
+    which share the same values and at the same time have clear solid strategy for the developed product.</string>
+
+    <string name="education">Education</string>
+    <string name="education_bachelors1">Bachelor\'s degree in Applied Informatics.</string>
+    <string name="education_bachelors2">Faculty of Informatics Masaryk University - 2014</string>
+    <string name="education_bachelors3">Thesis: Terrain generation on the GPU
+    Implementation and comparison of algorithms generating
+    random height maps resembling real terrain using CPU
+    and GPU variants.</string>
+
+    <string name="education_masters1">Master\'s degree in SSME</string>
+    <string name="education_masters2">Faculty of Informatics Masaryk University - 2014+</string>
+    <string name="education_masters3">Currently studying in field Service Science, Management, and Engineering.</string>
+
+    <string name="experience_imax1">Unity developer</string>
+    <string name="experience_imax2">iMax Games, São Carlos - Brazil</string>
+    <string name="experience_imax3">3D modelling of ingame assets, level design, creation and animation of 3D assets
+    for interactive book, programing modules for inhouse development tool Unify.</string>
+
+    <string name="experience_skills1">Skills</string>
+    <string name="experience_skills2">Java / Android, C / Cuda, Git, Photoshop, ZBrush, Cinema4D, Unity</string>
+
+    <string name="experience_languages1">Languages</string>
+    <string name="exoerience_languages2">English - Proficient\nGerman - Basic\nJapanese - Basic</string>
+
+    <string name="android">I \'ve developed own app for web api data retrieval. Used service class for
+    repeated querying and multiple fragments for showing data status. The app was published on Google Play
+    and had over 200 downloads and about quarter of that were active users. Later however the data changed and the info which it provided was not
+    very beneficial anymore, so I have taken it down. Since I have created this app from scratch all by myself,
+    it has proven to be a very hard and tedious task, but on the other hand it gave me a lot of experience.</string>
+
+    <string name="cuda">Completed course about Heterogeneous Parallel Programming and received satement of accomplishement with
+    distinction in 2013 - http://bit.ly/1DMVmJa\nDone bachelor\'s thesis using Visual Studio with Nvidia Nsight.</string>
+
 </resources>

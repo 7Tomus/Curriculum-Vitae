@@ -38,7 +38,6 @@
                     android:layout_height="match_parent"
                     android:fitsSystemWindows="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/material_shifted"
                     app:layout_collapseMode="parallax" />
 
                 <android.support.v7.widget.Toolbar
@@ -57,14 +56,8 @@
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:lineSpacingExtra="8dp"
-                android:padding="@dimen/activity_horizontal_margin"
-                android:text="@string/lorem_ipsum"
-                android:textSize="20sp" />
+            <include layout="@layout/layout_experience_container"></include>
+
         </android.support.v4.widget.NestedScrollView>
 
         <android.support.design.widget.FloatingActionButton

@@ -33,7 +33,7 @@ public class Activity_Experience extends AppCompatActivity {
 
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
-        Glide.with(this).load(R.drawable.material_shifted).centerCrop().into(imageView);
+        Glide.with(this).load(R.drawable.image_experience).centerCrop().into(imageView);
     }
 
     private void initToolbar() {

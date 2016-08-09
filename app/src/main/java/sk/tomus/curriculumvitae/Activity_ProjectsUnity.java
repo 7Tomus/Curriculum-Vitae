@@ -32,7 +32,7 @@ public class Activity_ProjectsUnity extends AppCompatActivity {
 
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
-        Glide.with(this).load(R.drawable.material_shifted).centerCrop().into(imageView);
+        Glide.with(this).load(R.drawable.image_unity).centerCrop().into(imageView);
     }
 
     private void initToolbar() {
