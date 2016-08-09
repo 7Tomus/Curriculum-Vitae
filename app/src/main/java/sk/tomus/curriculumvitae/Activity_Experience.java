@@ -39,7 +39,7 @@ public class Activity_Experience extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Clicked", Toast.LENGTH_SHORT).show();
-                startNextActivity(0);
+                startNextActivity(2);
                 finish();
             }
         });
@@ -97,9 +97,22 @@ public class Activity_Experience extends AppCompatActivity {
     private void startNextActivity(int flag){
         Intent intent;
         switch (flag){
+<<<<<<< HEAD
             case 0: intent = new Intent(this, Activity_About.class); break;
             case 1: intent = new Intent(this, Activity_Experience.class); break;
             default: intent = new Intent(this, Activity_About.class); break;
+=======
+            case 0: nextActivity = new Intent(this, Activity_About.class); break;
+            case 1: nextActivity = new Intent(this, Activity_Experience.class); break;
+            case 2: nextActivity = new Intent(this, Activity_ProjectsAndroid.class); break;
+            case 3: nextActivity = new Intent(this, Activity_ProjectsCuda.class); break;
+            case 4: nextActivity = new Intent(this, Activity_ProjectsUnity.class); break;
+            case 5: nextActivity = new Intent(this, Activity_ProjectsDota.class); break;
+            case 6: nextActivity = new Intent(this, Activity_Interests.class); break;
+            case 7: nextActivity = new Intent(this, Activity_Contact.class); break;
+
+            default: nextActivity = new Intent(this, Activity_About.class); break;
+>>>>>>> b18bc5d... Added and wired all activities
         }
         startActivity(intent);
     }
