@@ -1,5 +1,6 @@
 package sk.tomus.curriculumvitae;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
@@ -13,6 +14,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+
 public class Activity_Experience extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
@@ -22,9 +25,15 @@ public class Activity_Experience extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_experience);
+        loadBackdrop();
         initToolbar();
         initNavigationDrawer();
         initFabButton();
+    }
+
+    private void loadBackdrop() {
+        final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
+        Glide.with(this).load(R.drawable.material_shifted).centerCrop().into(imageView);
     }
 
     private void initToolbar() {
@@ -55,20 +64,46 @@ public class Activity_Experience extends AppCompatActivity {
                 int id = menuItem.getItemId();
 
                 switch (id) {
-                    case R.id.home:
-                        Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
+                    case R.id.about:
+                        startNextActivity(0);
                         drawerLayout.closeDrawers();
-                        break;
-                    case R.id.settings:
-                        Toast.makeText(getApplicationContext(), "Settings", Toast.LENGTH_SHORT).show();
-                        break;
-                    case R.id.trash:
-                        Toast.makeText(getApplicationContext(), "Trash", Toast.LENGTH_SHORT).show();
-                        drawerLayout.closeDrawers();
-                        break;
-                    case R.id.logout:
                         finish();
-
+                        break;
+                    case R.id.experience:
+                        startNextActivity(1);
+                        drawerLayout.closeDrawers();
+                        finish();
+                        break;
+                    case R.id.projects_android:
+                        startNextActivity(2);
+                        drawerLayout.closeDrawers();
+                        finish();
+                        break;
+                    case R.id.projects_cuda:
+                        startNextActivity(3);
+                        drawerLayout.closeDrawers();
+                        finish();
+                        break;
+                    case R.id.projects_unity:
+                        startNextActivity(4);
+                        drawerLayout.closeDrawers();
+                        finish();
+                        break;
+                    case R.id.projects_dota:
+                        startNextActivity(5);
+                        drawerLayout.closeDrawers();
+                        finish();
+                        break;
+                    case R.id.interests:
+                        startNextActivity(6);
+                        drawerLayout.closeDrawers();
+                        finish();
+                        break;
+                    case R.id.contact:
+                        startNextActivity(7);
+                        drawerLayout.closeDrawers();
+                        finish();
+                        break;
                 }
                 return true;
             }
@@ -94,26 +129,39 @@ public class Activity_Experience extends AppCompatActivity {
         actionBarDrawerToggle.syncState();
     }
 
-    private void startNextActivity(int flag){
-        Intent intent;
-        switch (flag){
-<<<<<<< HEAD
-            case 0: intent = new Intent(this, Activity_About.class); break;
-            case 1: intent = new Intent(this, Activity_Experience.class); break;
-            default: intent = new Intent(this, Activity_About.class); break;
-=======
-            case 0: nextActivity = new Intent(this, Activity_About.class); break;
-            case 1: nextActivity = new Intent(this, Activity_Experience.class); break;
-            case 2: nextActivity = new Intent(this, Activity_ProjectsAndroid.class); break;
-            case 3: nextActivity = new Intent(this, Activity_ProjectsCuda.class); break;
-            case 4: nextActivity = new Intent(this, Activity_ProjectsUnity.class); break;
-            case 5: nextActivity = new Intent(this, Activity_ProjectsDota.class); break;
-            case 6: nextActivity = new Intent(this, Activity_Interests.class); break;
-            case 7: nextActivity = new Intent(this, Activity_Contact.class); break;
+    private void startNextActivity(int flag) {
+        Intent nextActivity;
+        switch (flag) {
+            case 0:
+                nextActivity = new Intent(this, Activity_About.class);
+                break;
+            case 1:
+                nextActivity = new Intent(this, Activity_Experience.class);
+                break;
+            case 2:
+                nextActivity = new Intent(this, Activity_ProjectsAndroid.class);
+                break;
+            case 3:
+                nextActivity = new Intent(this, Activity_ProjectsCuda.class);
+                break;
+            case 4:
+                nextActivity = new Intent(this, Activity_ProjectsUnity.class);
+                break;
+            case 5:
+                nextActivity = new Intent(this, Activity_ProjectsDota.class);
+                break;
+            case 6:
+                nextActivity = new Intent(this, Activity_Interests.class);
+                break;
+            case 7:
+                nextActivity = new Intent(this, Activity_Contact.class);
+                break;
 
-            default: nextActivity = new Intent(this, Activity_About.class); break;
->>>>>>> b18bc5d... Added and wired all activities
+            default:
+                nextActivity = new Intent(this, Activity_About.class);
+                break;
         }
-        startActivity(intent);
+        Bundle bundleAnimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
+        startActivity(nextActivity, bundleAnimation);
     }
 }

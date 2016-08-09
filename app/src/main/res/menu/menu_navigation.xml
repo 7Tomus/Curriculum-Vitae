@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
+    <group
+        android:id="@+id/menu_group_about"
+        android:checkableBehavior="single">
         <item
-            android:id="@+id/home"
-            android:title="Home" />
+            android:id="@+id/about"
+            android:title="About" />
         <item
-            android:id="@+id/settings"
-            android:title="Settings" />
-        <item
-            android:id="@+id/trash"
-            android:title="Trash" />
-        <item
-            android:id="@+id/logout"
-            android:title="Logout" />
+            android:id="@+id/experience"
+            android:title="Experience" />
     </group>
+    <group
+        android:id="@+id/menu_group_projects"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/projects_android"
+            android:title="Projects - Android" />
+        <item
+            android:id="@+id/projects_cuda"
+            android:title="Projects - Cuda" />
+        <item
+            android:id="@+id/projects_unity"
+            android:title="Projects - Unity" />
+        <item
+            android:id="@+id/projects_dota"
+            android:title="Projects - Dota" />
+    </group>
+    <group
+        android:id="@+id/menu_group_interests"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/interests"
+            android:title="Interests" />
+        <item
+            android:id="@+id/contact"
+            android:title="Contact" />
+    </group>
+
 </menu>

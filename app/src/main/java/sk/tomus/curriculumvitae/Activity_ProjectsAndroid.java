@@ -24,10 +24,10 @@ public class Activity_ProjectsAndroid extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_experience);
+        loadBackdrop();
         initToolbar();
         initNavigationDrawer();
         initFabButton();
-        loadBackdrop();
     }
 
     private void loadBackdrop() {
@@ -65,39 +65,45 @@ public class Activity_ProjectsAndroid extends AppCompatActivity {
 
                 switch (id) {
                     case R.id.about:
-                        Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
+                        startNextActivity(0);
                         drawerLayout.closeDrawers();
+                        finish();
                         break;
                     case R.id.experience:
-                        Toast.makeText(getApplicationContext(), "Settings", Toast.LENGTH_SHORT).show();
+                        startNextActivity(1);
+                        drawerLayout.closeDrawers();
+                        finish();
                         break;
                     case R.id.projects_android:
-                        Toast.makeText(getApplicationContext(), "Trash", Toast.LENGTH_SHORT).show();
+                        startNextActivity(2);
                         drawerLayout.closeDrawers();
+                        finish();
                         break;
                     case R.id.projects_cuda:
-                        Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
+                        startNextActivity(3);
                         drawerLayout.closeDrawers();
+                        finish();
                         break;
                     case R.id.projects_unity:
-                        Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
+                        startNextActivity(4);
                         drawerLayout.closeDrawers();
+                        finish();
                         break;
                     case R.id.projects_dota:
-                        Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
+                        startNextActivity(5);
                         drawerLayout.closeDrawers();
+                        finish();
                         break;
                     case R.id.interests:
-                        Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
+                        startNextActivity(6);
                         drawerLayout.closeDrawers();
+                        finish();
                         break;
                     case R.id.contact:
-                        Toast.makeText(getApplicationContext(), "Home", Toast.LENGTH_SHORT).show();
+                        startNextActivity(7);
                         drawerLayout.closeDrawers();
-                        break;
-                    case R.id.exit:
                         finish();
-
+                        break;
                 }
                 return true;
             }
@@ -122,21 +128,39 @@ public class Activity_ProjectsAndroid extends AppCompatActivity {
         actionBarDrawerToggle.syncState();
     }
 
-    private void startNextActivity(int flag){
+    private void startNextActivity(int flag) {
         Intent nextActivity;
-        switch (flag){
-            case 0: nextActivity = new Intent(this, Activity_About.class); break;
-            case 1: nextActivity = new Intent(this, Activity_Experience.class); break;
-            case 2: nextActivity = new Intent(this, Activity_ProjectsAndroid.class); break;
-            case 3: nextActivity = new Intent(this, Activity_ProjectsCuda.class); break;
-            case 4: nextActivity = new Intent(this, Activity_ProjectsUnity.class); break;
-            case 5: nextActivity = new Intent(this, Activity_ProjectsDota.class); break;
-            case 6: nextActivity = new Intent(this, Activity_Interests.class); break;
-            case 7: nextActivity = new Intent(this, Activity_Contact.class); break;
+        switch (flag) {
+            case 0:
+                nextActivity = new Intent(this, Activity_About.class);
+                break;
+            case 1:
+                nextActivity = new Intent(this, Activity_Experience.class);
+                break;
+            case 2:
+                nextActivity = new Intent(this, Activity_ProjectsAndroid.class);
+                break;
+            case 3:
+                nextActivity = new Intent(this, Activity_ProjectsCuda.class);
+                break;
+            case 4:
+                nextActivity = new Intent(this, Activity_ProjectsUnity.class);
+                break;
+            case 5:
+                nextActivity = new Intent(this, Activity_ProjectsDota.class);
+                break;
+            case 6:
+                nextActivity = new Intent(this, Activity_Interests.class);
+                break;
+            case 7:
+                nextActivity = new Intent(this, Activity_Contact.class);
+                break;
 
-            default: nextActivity = new Intent(this, Activity_About.class); break;
+            default:
+                nextActivity = new Intent(this, Activity_About.class);
+                break;
         }
-        Bundle bundleAnimation = ActivityOptions.makeCustomAnimation(getApplicationContext(),R.anim.animation,R.anim.animation2).toBundle();
+        Bundle bundleAnimation = ActivityOptions.makeCustomAnimation(getApplicationContext(), R.anim.animation, R.anim.animation2).toBundle();
         startActivity(nextActivity, bundleAnimation);
     }
 }
