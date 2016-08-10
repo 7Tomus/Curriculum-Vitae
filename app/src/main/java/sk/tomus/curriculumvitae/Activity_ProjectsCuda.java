@@ -33,6 +33,10 @@ public class Activity_ProjectsCuda extends AppCompatActivity {
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
         Glide.with(this).load(R.drawable.image_cuda).centerCrop().into(imageView);
+        final ImageView imageView2 = (ImageView) findViewById(R.id.cuda_image1);
+        Glide.with(this).load(R.drawable.cuda_render1).centerCrop().into(imageView2);
+        final ImageView imageView3 = (ImageView) findViewById(R.id.cuda_image2);
+        Glide.with(this).load(R.drawable.cuda_render2).centerCrop().into(imageView3);
     }
 
     private void initToolbar() {

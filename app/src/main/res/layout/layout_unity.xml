@@ -56,7 +56,8 @@
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <include layout="@layout/layout_projects_cuda"></include>
+            <include layout="@layout/layout_projects_unity"></include>
+
         </android.support.v4.widget.NestedScrollView>
 
         <android.support.design.widget.FloatingActionButton

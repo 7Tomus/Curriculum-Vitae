@@ -24,7 +24,7 @@
     <string name="education_masters3">Currently studying in field Service Science, Management, and Engineering.</string>
 
     <string name="experience_imax1">Unity developer</string>
-    <string name="experience_imax2">iMax Games, São Carlos - Brazil</string>
+    <string name="experience_imax2">iMax Games, São Carlos - Brazil,\nOct 2015 - May 2016</string>
     <string name="experience_imax3">3D modelling of ingame assets, level design, creation and animation of 3D assets
     for interactive book, programing modules for inhouse development tool Unify.</string>
 
@@ -34,13 +34,18 @@
     <string name="experience_languages1">Languages</string>
     <string name="exoerience_languages2">English - Proficient\nGerman - Basic\nJapanese - Basic</string>
 
-    <string name="android">I \'ve developed own app for web api data retrieval. Used service class for
+    <string name="projects_android">I \'ve developed own app for web api data retrieval. Used service class for
     repeated querying and multiple fragments for showing data status. The app was published on Google Play
     and had over 200 downloads and about quarter of that were active users. Later however the data changed and the info which it provided was not
     very beneficial anymore, so I have taken it down. Since I have created this app from scratch all by myself,
     it has proven to be a very hard and tedious task, but on the other hand it gave me a lot of experience.</string>
 
-    <string name="cuda">Completed course about Heterogeneous Parallel Programming and received satement of accomplishement with
-    distinction in 2013 - http://bit.ly/1DMVmJa\nDone bachelor\'s thesis using Visual Studio with Nvidia Nsight.</string>
+    <string name="projects_cuda">Completed course about Heterogeneous Parallel Programming and received statement of accomplishment with
+    distinction in 2013 - http://bit.ly/1DMVmJa . Done bachelor\'s thesis using Visual Studio with Nvidia Nsight about terrain generation algorithms.
+    Here are some examples of Random Faults algorythm which is only viable if implemented on GPU:</string>
+
+    <string name="projects_unity">Developed personal game project Tunel Smash. Single machine multiplayer game which mixes
+    attributes of original DOS Tunneler game and Minecraft. GIT: https://github.com/7Tomus/Tunel-Smash.git\nI have also worked on
+    a plugin module for Unify which rendered mathematical functions and provided huge customizability</string>
 
 </resources>

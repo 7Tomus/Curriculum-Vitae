@@ -23,7 +23,7 @@ public class Activity_ProjectsUnity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_experience);
+        setContentView(R.layout.layout_unity);
         loadBackdrop();
         initToolbar();
         initNavigationDrawer();
@@ -33,6 +33,10 @@ public class Activity_ProjectsUnity extends AppCompatActivity {
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
         Glide.with(this).load(R.drawable.image_unity).centerCrop().into(imageView);
+        final ImageView imageView1 = (ImageView) findViewById(R.id.unity_image2);
+        Glide.with(this).load(R.drawable.unity_1).centerCrop().into(imageView1);
+        final ImageView imageView2 = (ImageView) findViewById(R.id.unity_image1);
+        Glide.with(this).load(R.drawable.unity_2).centerCrop().into(imageView2);
     }
 
     private void initToolbar() {

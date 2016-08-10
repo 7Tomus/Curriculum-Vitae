@@ -33,6 +33,8 @@ public class Activity_ProjectsAndroid extends AppCompatActivity {
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
         Glide.with(this).load(R.drawable.image_android).centerCrop().into(imageView);
+        final ImageView imageView1 = (ImageView) findViewById(R.id.alertside_image1);
+        Glide.with(this).load(R.drawable.alertside_screenshot).centerCrop().into(imageView1);
     }
 
     private void initToolbar() {
