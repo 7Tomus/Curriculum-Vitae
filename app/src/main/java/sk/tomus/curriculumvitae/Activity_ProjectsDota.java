@@ -23,7 +23,7 @@ public class Activity_ProjectsDota extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_experience);
+        setContentView(R.layout.layout_dota);
         loadBackdrop();
         initToolbar();
         initNavigationDrawer();

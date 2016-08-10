@@ -48,4 +48,14 @@
     attributes of original DOS Tunneler game and Minecraft. GIT: https://github.com/7Tomus/Tunel-Smash.git\nI have also worked on
     a plugin module for Unify which rendered mathematical functions and provided huge customizability</string>
 
+    <string name="projects_dota">Created 3D set of items for game Dota2. Process involved low-poly modelling,
+        high-poly sculpting, UV-unwrapping, texturing, applying shader values, skinning and creation of marketing materials.
+        Link: http://steamcommunity.com/sharedfiles/filedetails/?id=174186897</string>
+
+    <string name="interests_volu1">Volunteering</string>
+
+    <string name="interests_volu2">Preservation of environment\nWorkcamps by IJGD, SIW and NICE</string>
+
+    <string name="interests_volu3">Hann. Münden - Germany - 2006\nAmeland - Holland -  2007\nGevelsberg - Germany - 2008\nShiiba - Japan - 2014</string>
+
 </resources>
