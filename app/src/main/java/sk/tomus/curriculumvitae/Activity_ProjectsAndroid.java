@@ -112,7 +112,7 @@ public class Activity_ProjectsAndroid extends AppCompatActivity {
         });
         View header = navigationView.getHeaderView(0);
         TextView tv_email = (TextView) header.findViewById(R.id.tv_email);
-        tv_email.setText("tomuso.o@gmail.com");
+        tv_email.setText("Tomáš Javorský");
 
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close) {
 

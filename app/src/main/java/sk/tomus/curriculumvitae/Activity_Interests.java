@@ -23,7 +23,7 @@ public class Activity_Interests extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_experience);
+        setContentView(R.layout.layout_interests);
         loadBackdrop();
         initToolbar();
         initNavigationDrawer();
@@ -33,6 +33,8 @@ public class Activity_Interests extends AppCompatActivity {
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
         Glide.with(this).load(R.drawable.image_interests).centerCrop().into(imageView);
+        final ImageView imageView1 = (ImageView) findViewById(R.id.volunteering);
+        Glide.with(this).load(R.drawable.volunteering1).centerCrop().into(imageView1);
     }
 
     private void initToolbar() {
@@ -110,7 +112,7 @@ public class Activity_Interests extends AppCompatActivity {
         });
         View header = navigationView.getHeaderView(0);
         TextView tv_email = (TextView) header.findViewById(R.id.tv_email);
-        tv_email.setText("tomuso.o@gmail.com");
+        tv_email.setText("Tomáš Javorský");
 
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close) {
 

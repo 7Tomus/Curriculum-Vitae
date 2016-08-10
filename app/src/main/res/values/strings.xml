@@ -53,9 +53,15 @@
         Link: http://steamcommunity.com/sharedfiles/filedetails/?id=174186897</string>
 
     <string name="interests_volu1">Volunteering</string>
-
     <string name="interests_volu2">Preservation of environment\nWorkcamps by IJGD, SIW and NICE</string>
-
     <string name="interests_volu3">Hann. Münden - Germany - 2006\nAmeland - Holland -  2007\nGevelsberg - Germany - 2008\nShiiba - Japan - 2014</string>
+    <string name="interests_other_header">My other interests are:</string>
+    <string name="interests_other">Basketball, Snowboarding, Running, Outdoor Workout, Hiking, Online Gaming, Tutoring in ISC MU Brno</string>
+
+    <string name="contact_name">Tomáš Javorský</string>
+    <string name="contact_mail">email:</string>
+    <string name="contact_mail_address">tomuso.o@gmail.com</string>
+    <string name="contact_linkedin">linkedin:</string>
+    <string name="contact_linkedin_address">/linkedin.com/in/tomasJavorsky</string>
 
 </resources>

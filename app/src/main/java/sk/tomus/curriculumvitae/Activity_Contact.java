@@ -23,7 +23,7 @@ public class Activity_Contact extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_experience);
+        setContentView(R.layout.layout_contact);
         loadBackdrop();
         initToolbar();
         initNavigationDrawer();
@@ -33,6 +33,10 @@ public class Activity_Contact extends AppCompatActivity {
     private void loadBackdrop() {
         final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
         Glide.with(this).load(R.drawable.image_contact).centerCrop().into(imageView);
+        final ImageView imageView2 = (ImageView) findViewById(R.id.email_icon);
+        Glide.with(this).load(R.drawable.mail_icon).centerCrop().into(imageView2);
+        final ImageView imageView3 = (ImageView) findViewById(R.id.linkedin_icon);
+        Glide.with(this).load(R.drawable.linkedin_icon).centerCrop().into(imageView3);
     }
 
     private void initToolbar() {
@@ -110,7 +114,7 @@ public class Activity_Contact extends AppCompatActivity {
         });
         View header = navigationView.getHeaderView(0);
         TextView tv_email = (TextView) header.findViewById(R.id.tv_email);
-        tv_email.setText("tomuso.o@gmail.com");
+        tv_email.setText("Tomáš Javorský");
 
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close) {
 

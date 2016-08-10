@@ -24,6 +24,7 @@ public class Activity_About extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("About");
         setContentView(R.layout.layout_about);
         loadBackdrop();
         initToolbar();
@@ -110,7 +111,7 @@ public class Activity_About extends AppCompatActivity {
         });
         View header = navigationView.getHeaderView(0);
         TextView tv_email = (TextView) header.findViewById(R.id.tv_email);
-        tv_email.setText("tomuso.o@gmail.com");
+        tv_email.setText("Tomáš Javorský");
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer);
 
         ActionBarDrawerToggle actionBarDrawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close) {

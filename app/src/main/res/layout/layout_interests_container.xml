@@ -5,5 +5,7 @@
     android:orientation="vertical">
 
     <include layout="@layout/layout_interests_volunteering"></include>
+    <include layout="@layout/layout_interests_rest"></include>
+
 
 </LinearLayout>
