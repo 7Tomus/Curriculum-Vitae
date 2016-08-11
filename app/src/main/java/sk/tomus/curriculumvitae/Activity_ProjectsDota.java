@@ -46,7 +46,6 @@ public class Activity_ProjectsDota extends AppCompatActivity {
         fabButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Clicked", Toast.LENGTH_SHORT).show();
                 startNextActivity(6);
                 finish();
             }

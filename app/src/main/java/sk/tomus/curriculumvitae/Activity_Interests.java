@@ -48,7 +48,6 @@ public class Activity_Interests extends AppCompatActivity {
         fabButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Clicked", Toast.LENGTH_SHORT).show();
                 startNextActivity(7);
                 finish();
             }

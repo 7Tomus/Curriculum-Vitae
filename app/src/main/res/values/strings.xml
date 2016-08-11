@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Curriculum Vitae</string>
+    <string name="app_name">CV - Tomáš Javorský</string>
     <string name="tom_javorsk">Tomáš Javorský</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
@@ -8,8 +8,8 @@
     games and interactive apps for mobile devices in Unity during my internship in Brazil. Before that I made an
     app called Alertside in Android studio and released it on Google Play. I have also contributed 3D models
     to Dota2 workshop. My bachelor\'s thesis was covering a topic about parallel processing on GPU using CUDA.
-    Right now I would like to continue developing for Android. Im looking for a company with a driven team
-    which share the same values and at the same time have clear solid strategy for the developed product.</string>
+    Right now I would like to continue developing for Android. Im looking for a company with a friendly but driven team
+    and at the same time have clear strategy for the developed product.</string>
 
     <string name="education">Education</string>
     <string name="education_bachelors1">Bachelor\'s degree in Applied Informatics.</string>
